@@ -1,0 +1,97 @@
+
+section{
+    height: 2200px;
+}
+.program_regist{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.program_regist h2{
+    color: rgb(35, 64, 190);
+    margin-top: 100px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted gray;
+}
+.program_regist img{
+    width: 500px;
+    display: inline-block;
+}
+.program_regist_info1 {
+    font-size: 17px;
+    font-family: 고딕;
+    background-color: rgb(123, 160, 230);
+    padding: 30px;
+}
+.program_regist_info2 {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-family: 고딕;
+}
+.program_regist_info2>a {
+  color: rgb(35, 64, 190);
+  font-weight: bold;
+}
+.program_regist_info1_1 {
+    font-size: 17px;
+    font-family: 고딕;
+    background-color: rgb(161, 212, 156);
+    padding: 30px;
+    margin-top: 50px;
+}
+.program_regist_info2_1 img{
+    width: 500px;
+    float: right;
+}
+.program_regist_info2_1>a {
+    color: rgb(35, 64, 190);
+    font-weight: bold;
+}
+
+.program_regist_info3{
+    padding: 0;
+}
+.program_regist_info3 li{
+   position: absolute;
+   top: 50px;
+   left: 500px;
+   margin-left: 20px
+}
+.program_regist_info4 {
+   height: 334px;
+}
+.program_regist_info4 img{
+    padding: 0;
+    width: 500px;
+    float: right;
+}
+.program_regist_info4 li{
+    position: absolute;
+    width: 650px;
+ }
+ .program_regist_info4>a {
+    color: rgb(35, 64, 190);
+    font-weight: bold;
+    position: absolute;
+    top: 650px;
+}
+ .program_regist_info5 {
+    padding: 0;
+    position: absolute;
+    top: 710px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(243, 229, 245);
+ }
+ .program_regist_info5 img{
+    width: 500px;
+    height: 150px;
+}
+.program_regist_info5 li{
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    margin-left: 20px;
+}
