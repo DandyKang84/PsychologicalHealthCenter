@@ -1,0 +1,148 @@
+
+#regist {
+    margin: 0 auto;
+    width: 50%;
+    height: 40vw;
+}
+#regist_box {
+    margin-top: 20px;
+}
+form {
+	position: relative;
+    width: 500px;
+    height: 490px;
+    margin: 0 auto;
+	padding: 30px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: rgb(35, 64, 190);
+}
+input.btn_register1,
+input.btn_register2 {
+	display: inline;
+	float: right;
+	background: rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+}
+input.btn_register2 {
+	margin-right: 10px;
+}
+input.button:hover{
+	opacity: .7;
+}
+.error {
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	text-align: center;
+	background: #F2DEDE;
+	color: #A94442;
+	padding: 5px;
+	width: 40%;
+	border-radius: 5px;
+	margin: 10px auto;
+}
+
+.success {
+    position: absolute;
+	top: 80px;
+    left: 150px;
+    text-align: center;
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.btn_check_id {
+	width: 100px;
+	position: absolute;
+	right: 30px;
+	height: 40px;
+	margin-top: 4px;
+	background-color: rgb(35, 64, 190);
+	color:white;
+}
+input {
+	display: block;
+	border: 1px solid rgb(35, 64, 190);
+	width: 95%;
+	padding: 10px;
+	margin: 5px auto;
+	border-radius: 5px;
+}
+label {
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	padding: 10px;
+}
+.label_id {
+	width: 350px;
+	display: block;
+	margin-right: 126px;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.save {
+	font-size: 12px;
+	color: #555;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	
+}
+.save:hover {
+	text-decoration: underline;
+} 
+.id_check_h3 {
+	position: absolute;
+	top: 30px;
+	left: 30vw;
+	padding-left: 5px;
+	border-left: solid 5px rgb(35, 64, 190);
+ }
+ .id_check_window {
+	position: absolute;
+	top: 80px;
+	left: 30vw;
+	color: #A94442;
+ }
+ #close {
+	margin:20px 0 0 80px;
+	cursor:pointer;
+ }
+ .save_button {
+	position: absolute;
+	top: 150px;
+	left: 50vw;
+	width: 60px;
+	height: 30px;
+	background-color: rgb(35, 64, 190);
+    border: 0.1px solid rgb(35, 64, 190);
+	border-radius: 10px;
+ }
+ .close_button {
+	position: absolute;
+	top: 150px;
+	left: 30vw;
+	width: 60px;
+	height: 30px;
+	background-color: rgb(35, 64, 190);
+    border: 0.1px solid rgb(35, 64, 190);
+	border-radius: 10px;
+ }
+ 
