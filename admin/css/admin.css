@@ -1,0 +1,138 @@
+/* 관리자 회원 목록보기(admin_list.php) */
+.admin_box { 
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+.member_title { 
+    margin: 30px 0 10px 20px;
+    font-size: 20px;
+}
+.member_list { 
+    margin: 10px 0 30px 0;
+}
+.member_list li:nth-child(1) { 
+    font-weight: bold; 
+    background-color: #a1bfe7;
+}
+.member_list li { 
+    padding: 10px 0; 
+    border-bottom: solid 1px #dddddd; 
+}
+.member_list span { 
+    display: inline-block; 
+    text-align: center;
+}
+.member_list input { 
+    width: 40px; height: 20px; 
+    text-align: center;}
+.member_list button { 
+    padding: 3px 10px;
+}
+.member_list .column1 {
+    width: 80px; 
+}
+.member_list .column2 { 
+    width: 100px; 
+}
+.member_list .column3 { 
+    width: 80px; 
+    margin-left: 20px;
+}
+.member_list .column4 { 
+    width: 80px; 
+    margin-left: 20px;
+    border: none;
+}
+.member_list .column5 { 
+    width: 80px; 
+    margin-left: 20px;
+}
+.member_list .column6 {
+    width: 170px; 
+    margin-left: 20px;
+}
+.member_list .column7 { 
+    width: 70px; 
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.member_list .column7>button { 
+    background: rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+}
+.member_list .column8>button { 
+    background: rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+}
+.member_list .column8 { 
+    width: 70px;
+ }
+
+ 
+.board_title {
+     margin: 30px 0 10px 0;
+    }
+.board_list {
+     margin: 10px 0 50px 0;
+    }
+.board_list .column1 { 
+    width: 50px;
+    margin-left: 20px;
+}
+.board_list .column2 { 
+    width: 60px; 
+    margin-left: 30px;
+}
+.board_list .column3 {
+     width: 80px; 
+     margin-left: 40px;
+}
+.board_list .column4 { 
+    width: 200px;
+    text-align: left;
+    margin-left: 20px;
+    max-lines: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board_list .column5 { 
+    width: 120px; 
+}
+.board_list .column6 { 
+    width: 120px; 
+    margin-left: 20px;
+}
+.board_list li.title { 
+    font-weight: bold; 
+    /* border-top: solid 2px #dddddd; 
+    border-bottom: solid 2px #dddddd;  */
+    background-color: #a1bfe7;
+}
+.board_list li.title span.col4 { 
+    text-align: center; 
+}
+.board_list li { 
+    padding: 10px 0; 
+    border-bottom: solid 1px #dddddd; 
+}
+.board_list span { 
+    display: inline-block; 
+    text-align: center; 
+}
+.board_list button {
+     margin: 20px 0 0 20px; 
+     padding: 5px 10px;
+}
+#column9>button { 
+    background: rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+}
