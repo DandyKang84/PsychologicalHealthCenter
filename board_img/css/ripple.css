@@ -1,0 +1,17 @@
+.ripple1 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+.ripple_textarea {
+    border: 1px dotted rgb(35, 64, 190);
+    opacity: 0.5;
+}
+.ripple_button {
+    background:rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+}

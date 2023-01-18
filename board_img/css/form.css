@@ -1,0 +1,82 @@
+.imgboard_box {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+.imgboard_title {
+    border-bottom: 2px solid gray;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+/* .board_form {
+    float: left;
+} */
+.board_form span {
+    display: inline-block;
+}
+.board_form li {
+    border-bottom: 1px solid rgb(123, 160, 230);
+    padding: 10px;
+}
+.column1 {
+    width: 120px;
+    font-size: 15px;
+}
+.board_form input:not([type=checkbox]):not([type=file]) {
+    width: 500px;
+    height: 25px;
+}
+.board_form textarea {
+    width: 500px;
+    height: 490px;
+}
+.text_area {
+    height: 500px;
+}
+.text_area .column1 {
+    position: absolute;
+    top: 220px;
+
+}
+.text_area .column2 {
+    position: absolute;
+    left: 180px;
+    border: 1px solid rgb(123, 160, 230);
+}
+.buttons {
+    text-align: right;
+    margin: 20px 0 40px 0;
+}
+.buttons li {
+    display: inline;
+}
+.buttons button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background:rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+    border: none;
+}
+.buttons form {
+    display: inline-block;
+}
+.file_input {
+    width: 485px;
+    padding: 5px 10px;
+    background:rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+    border: none;
+}
+.file_input_modify {
+    padding: 5px 10px;
+    background:rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+    border: none;
+    font-size: 13px;
+}
