@@ -1,0 +1,161 @@
+/* 쪽지 보내기(message_form.php) */
+.message_box {
+     position: relative; 
+     width: 800px; 
+     margin: 0 auto; 
+    }
+.message_box h3 {
+    margin-top: 30px;
+    padding: 10px; 
+    border-bottom: solid 2px rgb(35, 64, 190);
+    font-size: 20px; 
+}
+.write_msg { 
+    padding: 0 20px; 
+}
+.write_msg span { 
+    display: inline-block; 
+}
+.write_msg .column1 { 
+    width: 100px; 
+    font-size: 15px;
+}
+.write_msg li {	
+    padding: 7px; 
+    border-bottom: 1px solid #dddddd; 
+}
+.write_msg input { 
+    width: 500px;
+    height: 30px; 
+    border: none;
+}
+.write_msg textarea { 
+    width: 600px;	
+    height: 150px;
+ }
+.write_msg .text_area {	
+    position: relative;
+    height: 158px; 
+}
+.text_area .column1 {
+     position: absolute; 
+     top: 10px; 
+}
+.text_area .column2 {
+     position: absolute; 
+     left: 100px; 
+}
+.area_box {
+    border: none;
+    border: 1px solid #dddddd; 
+}
+.write_msg button {
+    margin: 15px 0 30px 580px;	
+    padding: 5px 23px; 
+    cursor: pointer;
+    padding: 5px 10px;
+    background:rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+    width: 150px;
+    border: none;
+}
+/* 수신/송신 쪽지함(message_form.php) */
+.message li {
+     padding: 10px; 
+     border-bottom: solid 1px #dddddd;
+     }
+.message li:nth-child(1) { 
+    font-weight: bold;
+ }
+.message span {	
+    display: inline-block; 
+    text-align: center;
+ }
+.message .title { 
+    font-weight: bold;
+ }
+.message .column1 { 
+    width: 8%;
+ }
+.message .column2 {
+     width: 50%; 
+}
+.message_li .column2 {
+    text-align: left;
+}
+.message .column3 {
+     width: 18%;
+     }
+.message .column4 { 
+    width: 20%;
+ }
+.page_num {	
+    text-align: center;	
+    margin: 30px 0 
+}
+.page_num li {
+     display: inline; 
+    }
+.message_box .top_buttons  { 
+    text-align: right; 
+    margin: 10px 0;
+ }
+.message_box .top_buttons li {
+    display: inline;
+    margin-right: 10px; 
+    background-color: rgb(35, 64, 190);
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+.message_box .top_buttons a:link { 
+    font-size: 13px;
+    color: white;
+}
+.message_box .top_buttons a:visited {
+    font-size: 13px;
+    color:white;
+}
+.buttons {
+     text-align: right; 
+     margin: 20px 0 40px 0; 
+}
+.buttons li {
+     display: inline; 
+}
+.buttons button { 
+    background:rgb(35, 64, 190);
+	padding: 10px 15px;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	width: 120px;
+}
+/* 쪽지함 보기(view_msg.php) */
+.message_box { 
+    width: 800px;
+     margin: 0 auto;
+}
+.message_box .title { 
+    margin-top: 30px; 
+    padding: 10px; 
+    border-bottom: solid 2px #516e7f; 
+    font-size: 20px; 
+}
+.view_content li:nth-child(1) {
+    	padding: 15px;
+         border-bottom: solid 1px #aaaaaa;
+}
+.view_content .column2 {
+     float: right; 
+    }
+.view_content li:nth-child(2) {	
+    padding: 15px 15px 80px 15px; 
+    border-bottom: solid 1px #cccccc; 
+}
+.view_content li:nth-child(3) button {
+     padding: 5px 20px; 
+     margin: 15px 0 40px 720px; 
+     cursor: pointer;
+     }
