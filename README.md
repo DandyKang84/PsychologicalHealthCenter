@@ -14,12 +14,12 @@ PHP와 MySQL을 활용한 심리상담센터 웹사이트 제작
 | DBMS | MySQL Workbench 8.0.17 |
 | Server | Apache 2.4.54 |
 | Github | https://github.com/DandyKang84/PsychologicalHealthCenter |
-
+| Youtube | https://www.youtube.com/watch?v=8yBsewmafas |
 ## 개발기간 / 개발인원
 
 2021.01.12(목) ~ 2021.12.16(월) / 1명
 
 ### 동영상
-
+[https://youtu.be/8yBsewmafas](https://www.youtube.com/watch?v=8yBsewmafas)
 
 ## 기능 요약 및 설명
