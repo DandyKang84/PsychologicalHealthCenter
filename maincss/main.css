@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+  margin: 0px auto;
+  font-size: 17px;
+  flex-grow: 1;
+  font-family: "Nanum Gothic";
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}

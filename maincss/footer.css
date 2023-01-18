@@ -1,0 +1,36 @@
+
+.footer,
+.footer_name,
+.footer_position,
+.footer_info,
+.footer_icon {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.footer {
+    justify-content: space-around;
+    padding: 40px 150px 20px 150px;
+    margin: 0 auto;
+  }
+.footer_name {
+    margin-left: 0px;
+    margin-right: 10px;
+    color: rgb(35, 64, 190);
+} 
+.footer_name h2{
+    font-family: Times, Times New Roman, Georgia, serif;
+} 
+.footer_position li,
+.footer_info li {
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.footer_icon li{
+    padding: 0;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+

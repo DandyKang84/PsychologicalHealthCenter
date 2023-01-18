@@ -1,0 +1,250 @@
+/* main */
+.text {
+    font-weight: bold;
+    border-bottom: 1px solid rgb(123, 160, 230);
+    color: rgb(35, 64, 190);
+}
+
+#body_main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: top;
+}
+.body_center_main{
+    display: flex;
+    flex-direction: column;
+}
+.body_left {
+    display: flex;
+    flex-direction: column;
+}
+.body_center{
+    display: flex;
+    flex-direction: row;
+}
+.main_posting_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main_posting_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.latest {
+    width: 250px;
+    height: 250px;
+    border-top: 1px solid rgb(182, 192, 209);
+    border-bottom: 1px solid rgb(182, 192, 209);
+    padding: 40px 60px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.latest_center{
+    display: flex;
+    width: 667px;
+    height: 330px;
+    margin: 0 auto;
+}
+.youtube {
+    width: 667px;
+    height: 330px;
+}
+.latest ul {
+    padding: 0px;
+}
+
+.latest ul li {
+    list-style: none;
+}
+.latest ul li span {
+    justify-content: space-around;
+}
+
+.body_right {
+    width: 300px;
+    height: 602px;
+    padding: 40px 60px;
+}
+.body_right ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.body_right li img{
+    width: 300px;
+    height: 300px;
+}
+h4 {
+    padding-bottom: 10px;
+}
+
+.posting_date {
+    font-size: 10px;
+}
+
+.main_span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.main_span2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    font-size: 15px;
+}
+.main_span1_child {
+    width: 120px;
+    max-lines: 1;
+    display:block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+}
+.main_span2_child1 {
+    width: 60px;
+}
+.main_span1_child2 {
+    width: 40px;
+    max-lines: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.main_span2_child2 {
+    width: 60px;
+    max-lines: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.main_span2_child3 {
+    width: 60px;
+    color: rgb(123, 160, 230);
+    text-align: end;
+}
+.main_span2_child {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(123, 160, 230);
+    margin: 10px auto;
+}
+.specialist_box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.specialist_box div {
+    justify-content: center;
+    align-items: center;
+}
+
+.latest_specialist {
+    display: flex;
+    flex-direction: row;
+
+}
+.latest_specialist a{
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.latest_end1 {
+    margin-top: 30px;
+}
+.latest_end2 {
+    margin-top: 20px;
+}
+.zindex{
+    max-width: 50px;
+    max-height: 50px;
+    display: flex;
+    position: fixed;
+    right: 20px;
+    top: 250px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.zindex img {
+    border-radius: 10px;
+}
+
+
+/* main_img_slide */
+
+.slide_box {
+background: rgb(255, 255, 255);
+height: 800px;
+min-width: 1000px;
+overflow: hidden;
+position: relative;
+border-radius: 100px;
+}
+.slide_img_box {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+/* .slide_img_box.animated {
+-webkit-transition: left 1s ease-in;
+transition: left 1s ease-in;
+} */
+
+.slide_img_box a {
+position: absolute;
+width: 100%;
+height: 100%;
+text-align: center;
+display: inline-block;
+}
+
+.slide_header {
+    color: white;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 100%;
+    font-size: 62px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+/* .slide_nav a.disabled {
+display: none;
+} */
+
+.prev {
+    margin-left: -870px;
+}
+.next {
+    margin-left: 1600px;
+}
+/* indicator 인디케이터를 슬라이드쇼 아래 중앙위치에 배치 */
+.indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
+.indicator a {
+    font-size: 15px;
+    color: white;
+    opacity: 0.5;
+    padding: 5px;
+    display: inline-block;
+}
+.indicator a.active{
+    color: black;
+}
+
+
+
+  
