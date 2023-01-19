@@ -5,8 +5,8 @@ $send_id = $_POST["send_id"];
 $rv_id = $_POST['rv_id'];
 $subject = $_POST['subject'];
 $content = $_POST['content'];
-// htmlspecialchars 이 함수는 문자열에서 특정한 특수 문자를 HTML 엔티티로 변환한다. 
-// 이함수를 사용하면 악성 사용자로 부터 XSS 공격을 방지 할 수 있다
+
+//html tag 구조는 entity code 변환시켜줌 (htmlspecialchars) : trim, stripslashes는 기능을 빼버린것이 맞다.
 $subject = htmlspecialchars($subject, ENT_QUOTES);
 $content = htmlspecialchars($subject, ENT_QUOTES);
 $regist_day = date("Y-m-d (H:i)"); 

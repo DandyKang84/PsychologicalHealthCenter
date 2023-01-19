@@ -54,19 +54,17 @@
             <span class = "column4">등록일</span>
           </li>
 <?php
+          // 전체 페이지를 구한다
           if($mode == "send"){
             $sql = "select count(*) from message where send_id='$userid' order by num desc ";
           }else {
             $sql = "select count(*) from message where rv_id='$userid' order by num desc ";
           }
-          $result = mysqli_query($con, $sql);         
-          // select쿼리의 결과값을 한번에 한개의 데이터 행을 배열의 형태로 가져옴
+          $result = mysqli_query($con, $sql);
           $row = mysqli_fetch_array($result);
           $total_record=  $row['count(*)'];
-          // ceil() 함수는 소수점 자리의 숫자를 무조건 올리는 함수이다. 
-          // 실수(float)을 정수(integer)로 만든다.
           $total_page = ceil($total_record / $scale);
-
+          // 페이지에 있는 시작위치와 끝위치 레코드 셋을 가져온다.
           if($mode == "send"){
             $sql = "select * from message where send_id='$userid' order by num desc limit $start , $scale";
           }else {
@@ -74,8 +72,9 @@
           }
 
           $result = mysqli_query($con, $sql);
+          // 보여줄 전체갯수가 34개고 2페이지(10)를 보여달라고 할때 34 - 10 = 24 보여줘야할 번호 순서를 정해준다
           $number = $total_record - $start;
-
+          // 해당된 페이지 가져올 레코드 수를 출력해준다
           while( $row = mysqli_fetch_array($result)){
             $num = $row["num"]; 
             $subject = $row["subject"]; 
@@ -88,7 +87,6 @@
             }
             
             $result2 = mysqli_query($con, "select name from members where id='$msg_id'");
-            // select쿼리의 결과값을 한번에 한개의 데이터 행을 배열의 형태로 가져옴
             $record = mysqli_fetch_array($result2);
             $msg_name = $record["name"];
 ?>          

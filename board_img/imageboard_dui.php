@@ -18,7 +18,7 @@
         $writer = $row["id"];
         $copied_name = $row["file_copied"];
 
-        if (!isset($userid) || ($userid !== $writer && $level !== '1')) {
+        if (!isset($userid) || ($userid == $writer && $level == '1')) {
             alert_back('imageboard_dui error:22 수정권한이 없습니다.');
             exit();
         }

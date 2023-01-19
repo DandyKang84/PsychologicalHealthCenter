@@ -21,11 +21,28 @@
         die('Error: ' . mysqli_error($con));
     }
     $rowcount = mysqli_num_rows($result);
-
+    // $rowcount int 1 값이 들어가 있음 삭제 시 댓글이 추가 됨
     if (!$rowcount) {
         alert_back('board_ripple error:26 로그인 후 이용해 주세요!');
         exit();
     } else {
+        if (isset($_POST["mode"]) && $_POST["mode"] == "delete_ripple") {
+            $page = input_set($_POST["page"]);
+            $hit = input_set($_POST["hit"]);
+            $num = input_set($_POST["num"]);
+            $parent = input_set($_POST["parent"]);
+            $q_num = mysqli_real_escape_string($con, $num);
+    
+            $sql = "DELETE FROM `image_board_ripple` WHERE num=$q_num";
+            $result = mysqli_query($con, $sql);
+            if (!$result) {
+                die('Error: ' . mysqli_error($con));
+            }
+            mysqli_close($con);
+            echo "
+            <script>
+                location.href='./board_view.php?num=$parent&page=$page&hit=$hit';</script>";
+        }else {
         // htmlspecialchars 이 함수는 문자열에서 특정한 특수 문자를 HTML 엔티티로 변환한다. 이함수를 사용하면 악성 사용자로 부터 XSS 공격을 방지 할 수 있다
         $content = input_set($_POST["ripple_content"]);
         $page = input_set($_POST["page"]);
@@ -42,6 +59,7 @@
 
         $sql = "INSERT INTO `image_board_ripple` VALUES (null,'$q_parent','$q_userid','$q_username', '$q_usernick','$q_content','$regist_day')";
         $result = mysqli_query($con, $sql);
+        }
         if (!$result) {
             die('Error: ' . mysqli_error($con));
         }
@@ -52,21 +70,5 @@
         </script>
         ";
     }
-    if (isset($_POST["mode"]) && $_POST["mode"] == "delete_ripple") {
-        $page = input_set($_POST["page"]);
-        $hit = input_set($_POST["hit"]);
-        $num = input_set($_POST["num"]);
-        $parent = input_set($_POST["parent"]);
-        $q_num = mysqli_real_escape_string($con, $num);
-
-        $sql = "DELETE FROM `image_board_ripple` WHERE num=$q_num";
-        $result = mysqli_query($con, $sql);
-        if (!$result) {
-            die('Error: ' . mysqli_error($con));
-        }
-        mysqli_close($con);
-        echo "
-        <script>
-            location.href='./board_view.php?num=$parent&page=$page&hit=$hit';</script>";
-    }
+  
 ?>

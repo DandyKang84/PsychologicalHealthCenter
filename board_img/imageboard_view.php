@@ -38,7 +38,6 @@
 
         $sql = "select * from image_board where num=$num";
         $result = mysqli_query($con, $sql);
-        // select쿼리의 결과값을 한번에 한개의 데이터 행을 배열의 형태로 가져옴
         $row = mysqli_fetch_array($result);
 
         $id = $row["id"];
@@ -50,10 +49,10 @@
         $file_type = $row["file_type"];
         $file_copied = $row["file_copied"];
         $hit = $row["hit"];
-        // str_replace (변경대상 문자, 변경하려는 문자, 변수or바꾸고자하는 문자열(변수 수))
         $content = str_replace(" ", "&nbsp;", $content);
         $content = str_replace("\n", "<br>", $content);
 
+          // hit 추가 설정 조회수 : 이미지 게시판 몇명이 클릭했는지 점검
         if ($userid !== $id) {
             $new_hit = $hit + 1;
             $sql = "update image_board set hit=$new_hit where num=$num";
@@ -64,7 +63,6 @@
         $file_copied = $row['file_copied'];
         $file_type = $row['file_type'];
         if (!empty($file_name)) {
-            // getimagesize() 이미지의 크기나 Type에 대한 정보를 반환하는 함수
             $image_info = getimagesize("../database/" . $file_copied);
             $image_width = $image_info[0];
             $image_height = $image_info[1];
@@ -101,14 +99,12 @@
 <?php
             $sql = "select * from `image_board_ripple` where parent='$num' ";
             $ripple_result = mysqli_query($con, $sql);
-            // select쿼리의 결과값을 한번에 한개의 데이터 행을 배열의 형태로 가져옴
             while ($ripple_row = mysqli_fetch_array($ripple_result)) {
                 $ripple_num = $ripple_row['num'];
                 $ripple_id = $ripple_row['id'];
                 $ripple_nick = $ripple_row['nick'];
                 $ripple_date = $ripple_row['regist_day'];
                 $ripple_content = $ripple_row['content'];
-                // str_replace (변경대상 문자, 변경하려는 문자, 변수or바꾸고자하는 문자열(변수 수))
                 $ripple_content = str_replace("\n", "<br>", $ripple_content);
                 $ripple_content = str_replace(" ", "&nbsp;", $ripple_content);
 ?>
@@ -117,6 +113,7 @@
                 <li><?= $ripple_id . "&nbsp;&nbsp;" . $ripple_date ?></li>
                 <li id="mdi_del">
 <?php
+                // 관리자모드이거나, 보모글을 쓴 유저라면 삭제기능 부여
                 if ($_SESSION['id'] == "admin" || $_SESSION['id'] == $ripple_id) {
                     echo '
                     <form style="display:inline" action="imageboard_dui.php" method="post">
