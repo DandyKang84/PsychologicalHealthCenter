@@ -37,9 +37,3 @@ function reset_form(){
     document.regist_form.id.focus();
     return;
 }
-
-function check_id() {
-    window.open("regist_check_id.php?id=" + document.member_form.id.value,
-   "IDcheck", "left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes, status=no, titlebar=no, toolbar=no, location=no, menubar=no");
-
-  }

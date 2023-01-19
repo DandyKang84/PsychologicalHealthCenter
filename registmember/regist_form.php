@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="../maincss/footer.css?after">
     <link rel="stylesheet" type="text/css" href="./css/registmember.css?after">
     <script src="./js/registmember.js"></script>
+    
+    <script>
+    function check_id() {
+    window.open("regist_check_id.php?id=" + document.regist_form.id.value,
+   "IDcheck", "left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes, status=no, titlebar=no, toolbar=no, location=no, menubar=no");
+  }    
+    </script>
 </head>
 <body>
     <header>
